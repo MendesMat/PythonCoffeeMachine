@@ -46,7 +46,7 @@ def is_transaction_successful(money_received, choice):
     if money_received >= drink_cost:
         # If money is more than enough
         if money_received > drink_cost:
-            print(f"\nHere is your exchange. ${money_received - drink_cost}")
+            print(f"\nHere is your exchange. ${round(money_received - drink_cost, 2)}")
 
         return True
 
